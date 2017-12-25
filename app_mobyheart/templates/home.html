@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+	<title>MoByHeart-Home</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/static/main.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="page-header">
+				<h1>
+					MoByHeart <small>Modify Your Model By Heart</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-2 column">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+                        <span class="glyphicon glyphicon-th-list"></span>&nbsp;LIST
+					</h4>
+				</div>
+				<div class="panel-footer" onclick="item_selection.load_table()">
+					Item Selection
+				</div>
+                <div class="panel-footer" onclick="model_setting.load_table()">
+					Model Setting
+				</div>
+                <div class="panel-footer" onclick="model_running.load_table()">
+					Model Running
+				</div>
+                <div class="panel-footer">
+					Model Ranking
+				</div>
+			</div>
+		</div>
+        <div class="col-md-10 column" id="display">
+            <table class="table" id="table_id">
+			</table>
+            <div id = "button_id"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
